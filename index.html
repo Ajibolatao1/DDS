@@ -21,7 +21,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>Distinct Digital Strategies</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.webp"
+      type="image/x-icon" />
+    <title>Distinct Digital Strategy</title>
   </head>
   <body>
     <!-- <header class="header">
@@ -80,16 +84,153 @@
       </nav>
     </header>
 
+    <!-- Main -->
     <main class="main">
       <section class="section_1"></section>
-      <section class="section_2"></section>
-      <section class="section_3"></section>
+      <section class="section services">
+        <div class="top title py-3">What we do</div>
+        <div
+          class="mid container d-flex flex-wrap gap-4 justify-content-center">
+          <div class="box bg-dark rounded shadow">
+            <div class="name text-white pt-2">Search Engine Optimization</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box box2 bg-dark rounded shadow">
+            <div class="name text-white pt-2">
+              Pay Per Click Management (Google Advertising)
+            </div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box bg-dark rounded shadow">
+            <div class="name text-white pt-2">Conversion Rate Optimization</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box bg-dark rounded shadow">
+            <div class="name text-white pt-2">Website Design & Development</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box box2 bg-dark rounded shadow">
+            <div class="name text-white pt-2">
+              Social Media Management/Marketing
+            </div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box bg-dark rounded shadow">
+            <div class="name text-white pt-2">E-commerce</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box bg-dark rounded shadow">
+            <div class="name text-white pt-2">Affiliate Marketing</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box bg-dark rounded shadow">
+            <div class="name text-white pt-2">Training</div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+          <div class="box box2 bg-dark rounded shadow">
+            <div class="name text-white pt-2">
+              Digital Marketing Agency Services
+            </div>
+            <div class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              excepturi?
+            </div>
+            <div class="box-icon"><i class="bi bi-search"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client -->
+      <section class="section client">
+        <div class="top title text-start container">Client</div>
+        <div class="mid container">
+          <!--  -->
+          <div class="slider"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
       <section class="section contact">
         <div class="top title">Contact</div>
         <div class="mid container py-4">
           <div class="row">
-            <div class="col-lg-6 bg-danger">Jii</div>
-            <div class="col-lg-6 p-2">
+            <div class="col-lg-6 py-3">
+              <!-- Form -->
+              <form class="max-width-500 px-2">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    required
+                    placeholder="e.g John Doe" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                    placeholder="e.g johndoe@gmail.com" />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label"
+                    form="message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    id="message"
+                    placeholder="enter your message"
+                    required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                  Send message
+                </button>
+              </form>
+            </div>
+            <div class="col-lg-6 p-2 py-3">
               <!-- Mobile Phone -->
               <div class="top d-flex gap-3 align-items-start py-2">
                 <div class="left">
@@ -134,7 +275,7 @@
                     <div>
                       <a
                         href="mailto:info@distinctdigitalstrategy.com"
-                        class="text-decoration-none text-white-50"
+                        class="text-decoration-none link-info"
                         >info@distinctdigitalstrategy.com</a
                       >
                     </div>
@@ -183,19 +324,31 @@
       <div class="mid text-white p-2 max-width-1000 m-auto">
         <div class="container">
           <div class="row">
-            <div class="list col-lg-6 mt-2">Search Engine Optimization</div>
-            <div class="list col-lg-6 mt-2">
+            <div class="list col-lg-4 justify-content-around mt-2">
+              Search Engine Optimization
+            </div>
+            <div class="list col-lg-4 justify-content-around mt-2">
               Pay Per Click Management (Google Advertising)
             </div>
-            <div class="list col-lg-6 mt-2">Conversion Rate Optimization</div>
-            <div class="list col-lg-6 mt-2">Website Design & Development</div>
-            <div class="list col-lg-6 mt-2">
+            <div class="list col-lg-4 justify-content-around mt-2">
+              Conversion Rate Optimization
+            </div>
+            <div class="list col-lg-4 justify-content-around mt-2">
+              Website Design & Development
+            </div>
+            <div class="list col-lg-4 justify-content-around mt-2">
               Social Media Management/Marketing
             </div>
-            <div class="list col-lg-6 mt-2">E-commerce</div>
-            <div class="list col-lg-6 mt-2">Affiliate Marketing</div>
-            <div class="list col-lg-6 mt-2">Training</div>
-            <div class="list col-lg-6 mt-2">
+            <div class="list col-lg-4 justify-content-around mt-2">
+              E-commerce
+            </div>
+            <div class="list col-lg-4 justify-content-around mt-2">
+              Affiliate Marketing
+            </div>
+            <div class="list col-lg-4 justify-content-around mt-2">
+              Training
+            </div>
+            <div class="list col-lg-4 justify-content-around mt-2">
               Digital Marketing Agency Services
             </div>
           </div>

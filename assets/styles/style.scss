@@ -15,6 +15,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #333;
   color: #ccc;
+  // width: 100vw;
+  // overflow-x: hidden;
 
   //   Header
   //   .header {
@@ -55,22 +57,107 @@ body {
     }
   }
 
-  //   Footer
-  .footer {
-    .mid {
-      .list {
-        //   min-width: 200px !important;
-        background-color: rgb(7, 87, 7);
-        //   padding: 2px 5px;
+  .services {
+    .box {
+      width: 300px;
+      height: 250px;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+
+      .desc {
+        padding: 20px 0;
+        flex: 1;
+        z-index: 2;
+      }
+      .box-icon {
+        z-index: 3;
+        font-size: 3rem;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // width: 100%;
+        // height: 100%;
+        background-color: rgb(6, 84, 6) !important;
+        border-top-left-radius: 50%;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+      }
+    }
+
+    .box2 {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // width: 100%;
+        // height: 100%;
+        background-color: rgb(6, 84, 6) !important;
+        border-top-left-radius: 50%;
+        width: 150px;
+        height: 150px;
+        z-index: 1;
+      }
+    }
+
+    // .box::before {
+    //   content: "Hello";
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: red !important;
+    //   z-index: 2;
+    // }
+  }
+
+  .client {
+    .slider {
+      display: flex;
+      gap: 2rem;
+      // justify-content: space-around;
+      // overflow-x: scroll;
+
+      img {
+        width: 100px;
+        // display: none;
       }
     }
   }
+
+  //   Footer
+  // .footer {
+  //   .mid {
+  //     .list {
+
+  //     }
+  //   }
+  // }
 }
 
 // max width
+.max-width-300 {
+  max-width: 300px;
+}
 .max-width-500 {
   max-width: 500px;
+  // width: 100%;
 }
 .max-width-1000 {
   max-width: 1000px;
 }
+
+// width
+// .box-width {
+//   width: 250px;
+// }
