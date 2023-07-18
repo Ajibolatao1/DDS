@@ -15,8 +15,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #333;
   color: #ccc;
-  // width: 100vw;
-  // overflow-x: hidden;
+  line-height: 1.6;
+  width: 100vw;
+  overflow-x: hidden;
 
   //   Header
   //   .header {
@@ -54,6 +55,25 @@ body {
       text-align: center;
       color: white;
       font-size: 2rem;
+    }
+  }
+
+  .team {
+    .mid {
+      .card {
+        width: 200px;
+        // margin: -1px 0 0 -1px;
+        padding: 5px;
+        h5 {
+          text-align: center !important;
+          color: #333;
+        }
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
     }
   }
 
@@ -136,13 +156,13 @@ body {
   }
 
   //   Footer
-  // .footer {
-  //   .mid {
-  //     .list {
-
-  //     }
-  //   }
-  // }
+  .footer {
+    .mid {
+      .list {
+        padding: 5px 0;
+      }
+    }
+  }
 }
 
 // max width
@@ -161,3 +181,7 @@ body {
 // .box-width {
 //   width: 250px;
 // }
+
+.active {
+  color: rgb(32, 183, 32) !important;
+}
