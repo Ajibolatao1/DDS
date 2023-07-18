@@ -28,10 +28,14 @@ body .section .title {
 body .team .mid .card {
   width: 200px;
   padding: 5px;
+  background-color: grey;
 }
 body .team .mid .card h5 {
   text-align: center !important;
-  color: #333;
+  color: #222;
+}
+body .team .mid .card .card-text {
+  color: rgb(93, 212, 93);
 }
 body .team .mid .card img {
   width: 100%;
@@ -84,12 +88,100 @@ body .services .box2::before {
   height: 150px;
   z-index: 1;
 }
-body .client .slider {
-  display: flex;
-  gap: 2rem;
+body .client .mid {
+  /* Slider */
 }
-body .client .slider img {
-  width: 100px;
+body .client .mid h2 {
+  text-align: center;
+  padding: 20px;
+}
+body .client .mid .slick-slide {
+  margin: 0px 20px;
+}
+body .client .mid .slick-slide img {
+  width: 100%;
+  max-height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .client .mid .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+body .client .mid .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+body .client .mid .slick-list:focus {
+  outline: none;
+}
+body .client .mid .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+body .client .mid .slick-slider .slick-track,
+body .client .mid .slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+body .client .mid .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+body .client .mid .slick-track:before,
+body .client .mid .slick-track:after {
+  display: table;
+  content: "";
+}
+body .client .mid .slick-track:after {
+  clear: both;
+}
+body .client .mid .slick-loading .slick-track {
+  visibility: hidden;
+}
+body .client .mid .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+body .client .mid [dir=rtl] .slick-slide {
+  float: right;
+}
+body .client .mid .slick-slide img {
+  display: block;
+}
+body .client .mid .slick-slide.slick-loading img {
+  display: none;
+}
+body .client .mid .slick-slide.dragging img {
+  pointer-events: none;
+}
+body .client .mid .slick-initialized .slick-slide {
+  display: block;
+}
+body .client .mid .slick-loading .slick-slide {
+  visibility: hidden;
+}
+body .client .mid .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+body .client .mid .slick-arrow.slick-hidden {
+  display: none;
 }
 body .footer .mid .list {
   padding: 5px 0;
