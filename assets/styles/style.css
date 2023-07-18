@@ -25,6 +25,20 @@ body .section .title {
   color: white;
   font-size: 2rem;
 }
+body .about .left {
+  flex: 1;
+}
+body .about .left img {
+  max-height: 400px;
+  width: 400px;
+  margin: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .about .right {
+  flex: 1;
+}
 body .team .mid .card {
   width: 200px;
   padding: 5px;
